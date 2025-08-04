@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
 
     @Test
-    void captchaTest() {
-        System.out.println("Test number: 1");
-        
+    void captchaTest() {        
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
         $("html").shouldHave(text("Об этой странице"));
+        System.out.println("Test number: 1");
+
     }
 }
