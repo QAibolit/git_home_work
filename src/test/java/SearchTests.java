@@ -13,5 +13,6 @@ public class SearchTests {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
         $("html").shouldHave(text("Об этой странице"));
+        System.out.println("Test is completed");
     }
 }
